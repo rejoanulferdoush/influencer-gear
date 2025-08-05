@@ -114,6 +114,10 @@
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
 }
+/* logo styles */
+.logo__dot {
+  color: var(--color-purple);
+}
 /* nav styles */
 .nav__container {
   margin-top: var(--margin-top-md);
@@ -135,6 +139,11 @@
     color: var(--color-black);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
+  }
+  & :hover {
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+    color: var(--color-purple);
   }
   & i {
     cursor: pointer;

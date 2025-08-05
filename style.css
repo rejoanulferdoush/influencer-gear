@@ -19,7 +19,7 @@
 
   /* font */
   --font-size-xxl: 52px;
-  --font-size-xl: 38px;
+  --font-size-xl: clamp(2rem, calc(2rem + 0.5vw), 2.375rem);
   --font-size-lg: 28px;
   --font-size-base: 24px;
   --font-size-sm: 16px;
@@ -37,7 +37,7 @@
   --radius-sm: 5px;
 
   /* padding & margin */
-  --padding-lg: 0 calc(clamp(7.5rem, 4vw, 9rem) + 0.5rem);
+  --padding-lg: 0 calc(clamp(1.5rem, 4vw, 9rem) + 0.5rem);
   --margin-top-lg: 20vh;
   --margin-top-md: 5vh;
 }
@@ -112,4 +112,32 @@
   color: var(--color-white);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
+}
+/* nav styles */
+.nav__container {
+  margin-top: var(--margin-top-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-lg);
+}
+.nav__list--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+  & li {
+    list-style: none;
+  }
+  & a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+  }
+  & i {
+    cursor: pointer;
+    color: var(--color-black);
+    font-size: var(--font-size-sm);
+  }
 }

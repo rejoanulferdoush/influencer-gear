@@ -40,6 +40,7 @@
   --padding-lg: 0 calc(clamp(1.5rem, 4vw, 9rem) + 0.5rem);
   --margin-top-lg: 20vh;
   --margin-top-md: 5vh;
+  --margin-top-sm: 2vh;
 }
 /* COMMON STYLES */
 /* button */

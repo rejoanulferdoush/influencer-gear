@@ -4,6 +4,10 @@
     display: none;
   }
   /* menu small media */
+  .nav__container{
+    margin-top: var(--margin-top-sm);
+    flex-direction: row-reverse;
+  }
   .nav__list--container {
     display: none;
     position: absolute;
@@ -14,8 +18,8 @@
     padding: 1.25rem;
     height: 100dvh;
     width: 200px;
-    top: 90px;
-    right: 6.8%;
+    top: 80px;
+    left: 6.8%;
     & li {
       list-style: none;
       &:has(> i) {

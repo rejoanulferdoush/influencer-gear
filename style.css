@@ -146,11 +146,16 @@
 }
 /* nav styles */
 .nav__container {
-  margin-top: var(--margin-top-md);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: var(--padding-lg);
+  justify-content: space-between;
+  margin-top: var(--margin-top-md);
+  background-color: var(--color-white);
 }
 .nav__list--container {
   display: flex;
